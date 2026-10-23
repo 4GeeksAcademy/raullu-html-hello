@@ -2,6 +2,21 @@
 
 Estas reglas se aplican a todo el desarrollo de este proyecto. Antes de realizar cualquier cambio, léelas y respétalas. Toda futura implementación debe cumplirlas; si una petición entra en conflicto con ellas, no introduzcas una solución incompatible y solicita aclaración.
 
+## 0. Referencia del proyecto y flujo obligatorio por especificaciones
+
+- `BRIEFING.md` es la referencia detallada para el propósito del sitio, la estructura de secciones, los textos, la estética y la forma de crear la landing page. **Consúltalo antes de elaborar una especificación y, especialmente, antes de implementar código.**
+- Todo desarrollo debe seguir este flujo secuencial, sin saltarse etapas ni iniciar una etapa posterior antes de recibir aprobación explícita de la anterior:
+	1. Elaborar `spec.md` para el desarrollo solicitado; no implementar código.
+	2. Esperar la aprobación explícita de `spec.md`. Si hay observaciones, actualizarlo y volver a solicitar aprobación.
+	3. Una vez aprobado, elaborar `plan.md`.
+	4. Esperar la aprobación explícita de `plan.md`; incorporar cualquier corrección y volver a solicitar aprobación si corresponde.
+	5. Una vez aprobado el plan, elaborar `tasks.md` con tareas numeradas, ordenadas y verificables.
+	6. Esperar la aprobación explícita de `tasks.md`; no implementar antes de ella.
+	7. Solo con `spec.md`, `plan.md` y `tasks.md` aprobados, y autorización para implementar, ejecutar las tareas en orden y verificar cada una.
+- Si el usuario pide implementación directa sin haber aprobado los documentos requeridos, detenerse y solicitar la aprobación o completar primero la etapa que falte.
+- Conserva los documentos de cada desarrollo en la ubicación de especificaciones correspondiente (por ejemplo, `specs/001-HTML/` y `specs/002-CSS/`).
+- Si una petición nueva contradice `BRIEFING.md`, estas reglas o una especificación aprobada, no supongas qué prevalece: señala la contradicción y solicita aclaración.
+
 ## 1. Contexto y objetivo
 
 - El proyecto es una landing page para un diseñador gráfico especializado en portadas e ilustraciones de novelas.
@@ -25,7 +40,7 @@ Sigue estas fases en este orden:
 
 - No empieces la fase CSS antes de terminar la estructura HTML.
 - Trabaja únicamente en la fase solicitada y evita modificar archivos de fases anteriores salvo que sea imprescindible para cumplir los requisitos o corregir un defecto. Explica brevemente por qué es necesario cualquier cambio de ese tipo.
-- No crees archivos HTML o CSS mientras no se haya solicitado empezar la implementación. Para esta etapa inicial, el único archivo que se debe crear es `AGENTS.md`.
+- No crees ni modifiques archivos de implementación HTML o CSS hasta que se hayan completado y aprobado las etapas de `spec.md`, `plan.md` y `tasks.md`, y se haya autorizado la implementación. La creación o modificación de documentos de planificación no autoriza por sí misma a escribir código.
 - No modifiques archivos ajenos al alcance de la tarea ni reformatees o reorganices partes no relacionadas.
 
 ## 4. Requisitos de HTML y contenido
